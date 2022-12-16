@@ -9,11 +9,10 @@ private:
 	int y1;
 	int x2;
 	int y2;
-	bool isFilled;
 
 public:
 	Shape();
-	Shape(int x1, int y1, int x2, int y2, bool isFilled);
+	Shape(int x1, int y1, int x2, int y2);
 	virtual ~Shape();
 
 // Setters
@@ -22,7 +21,6 @@ public:
 	void setY1(int y1);
 	void setX2(int x2);
 	void setY2(int y2);
-	void setFilled(bool isFilled);
 
 // Getters
 public:
@@ -30,7 +28,6 @@ public:
 	int getY1();
 	int getX2();
 	int getY2();
-	bool getFilled();
 
 // Methods
 public:
