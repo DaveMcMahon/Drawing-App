@@ -3,25 +3,14 @@
 
 #include <iostream>
 #include <sstream>
-#include "Shape.h"
+#include "BoundedShape.h"
 
-class Square: Shape {
-private:
-	bool isFilled;
-
+class Square: public BoundedShape {
 public:
 	Square();
 	Square(int x1, int y1, int x2, int y2, bool isFilled);
-
-public:
-	void setFilled(bool isFilled);
-
-public:
-	double getWidth();
-	double getHeight();
-	double getUpperLeftX();
-	double getUpperLeftY();
-	bool getFilled();
+	virtual ~Square() {
+	}
 
 public:
 	void draw() override;

@@ -17,8 +17,8 @@ void Line::draw() {
 	std::stringstream ss;
 	ss << "Drawing a Line..";
 	ss << "\n";
-	ss << "X1: " << getX1() << ", Y1: " << getY1() << ", X2: " << getX2()
-			<< ", Y2: " << getY2();
+	ss << "X1: " << getX1() << ", Y1: " << getY1();
+	ss << "\nX2: " << getX2() << ", Y2: " << getY2();
 
 	std::cout << ss.str() << std::endl;
 }

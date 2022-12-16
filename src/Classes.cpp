@@ -11,8 +11,9 @@ int main() {
 	Square square(40, 50, 200, 670, true);
 
 	line.draw();
+	cout << endl;
 	square.draw();
 
-	cout << "Program finishing..." << endl;
+	cout << "\nProgram finishing..." << endl;
 	return 0;
 }

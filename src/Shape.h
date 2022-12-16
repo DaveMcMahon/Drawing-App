@@ -13,7 +13,7 @@ private:
 public:
 	Shape();
 	Shape(int x1, int y1, int x2, int y2);
-	virtual ~Shape();
+	virtual ~Shape(){}
 
 // Setters
 public:
