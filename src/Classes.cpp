@@ -8,7 +8,7 @@ using namespace std;
 int main() {
 
 	Line line(10, 20, 300, 450);
-	Square square(40, 50, 200, 670, 20, 45, true);
+	Square square(40, 50, 200, 670, true);
 
 	line.draw();
 	square.draw();

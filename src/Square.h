@@ -7,23 +7,20 @@
 
 class Square: Shape {
 private:
-	double width;
-	double height;
 	bool isFilled;
 
 public:
 	Square();
-	Square(int x1, int y1, int x2, int y2, double width, double height,
-			bool isFilled);
+	Square(int x1, int y1, int x2, int y2, bool isFilled);
 
 public:
-	void setWidth(double width);
-	void setHeight(double height);
 	void setFilled(bool isFilled);
 
 public:
 	double getWidth();
 	double getHeight();
+	double getUpperLeftX();
+	double getUpperLeftY();
 	bool getFilled();
 
 public:
