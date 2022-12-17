@@ -19,6 +19,7 @@ void Line::draw() {
 	ss << "\n";
 	ss << "X1: " << getX1() << ", Y1: " << getY1();
 	ss << "\nX2: " << getX2() << ", Y2: " << getY2();
+	ss << "\n";
 
 	std::cout << ss.str() << std::endl;
 }

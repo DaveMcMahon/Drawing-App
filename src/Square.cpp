@@ -27,6 +27,7 @@ void Square::draw() {
 	ss << "\nWidth: " << getWidth() << ", Height: " << getHeight();
 	ss << "\nUpper Left X: " << getUpperLeftX() << ", Upper Left Y: "
 			<< getUpperLeftY();
+	ss << "\n";
 
 	std::cout << ss.str() << std::endl;
 }
