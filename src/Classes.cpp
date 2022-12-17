@@ -8,18 +8,31 @@ using namespace std;
 
 int main() {
 
-	Square square(40, 50, 200, 670, false);
-	Shape *sq = new Square(50, 100, 340, 65, true);
-	Shape *triangle = new Triangle(98, 34, 150, 200, true);
+	Shape *myShape = nullptr;
 
-	square.draw();
-	cout << endl;
-	sq->draw();
-	cout << endl;
-	triangle->draw();
+	for (unsigned int i = 0; i < 15; i++) {
 
-	delete sq;
-	delete triangle;
+		int shapeType = 0 + (rand() % 3);
+		int isFilled = 0 + (rand() % 2);
+		int x1CoOrd = 1 + (rand() % 1000);
+		int y1CoOrd = 1 + (rand() % 1000);
+		int x2CoOrd = 1 + (rand() % 1000);
+		int y2CoOrd = 1 + (rand() % 1000);
+
+		if (shapeType == 0) {
+			myShape = new Line(x1CoOrd, y1CoOrd, x2CoOrd, y2CoOrd);
+		} else if (shapeType == 1) {
+			myShape = new Square(x1CoOrd, y1CoOrd, x2CoOrd, y2CoOrd, isFilled);
+		} else {
+			myShape = new Triangle(x1CoOrd, y1CoOrd, x2CoOrd, y2CoOrd,
+					isFilled);
+		}
+
+		myShape->draw();
+	}
+
+	myShape = nullptr;
+	delete myShape;
 
 	cout << "\nProgram finishing..." << endl;
 	return 0;
