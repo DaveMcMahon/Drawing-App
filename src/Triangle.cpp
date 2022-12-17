@@ -1,14 +1,15 @@
-#include "Square.h"
+#include "Triangle.h"
 
-Square::Square() :
+Triangle::Triangle() :
 		BoundedShape() {
 }
 
-Square::Square(int x1, int y1, int x2, int y2, bool isFilled) :
+Triangle::Triangle(int x1, int y1, int x2, int y2, bool isFilled) :
 		BoundedShape(x1, y1, x2, y2, isFilled) {
 }
 
-void Square::draw() {
+
+void Triangle::draw() {
 	// 	SDL Code will go here to actually draw
 	//	a graphical shape on screen and render it.
 	// 	For now, console logging will suffice until logic is correct.
@@ -16,9 +17,9 @@ void Square::draw() {
 	std::stringstream ss;
 
 	if (getFilled()) {
-		ss << "Drawing a coloured in Square..";
+		ss << "Drawing a coloured in Triangle..";
 	} else {
-		ss << "Drawing an empty Square..";
+		ss << "Drawing an empty Triangle..";
 	}
 
 	ss << "\n";
