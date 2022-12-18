@@ -17,7 +17,7 @@ public:
 	}
 
 // Setters
-public:
+private:
 	void setX1(int x1);
 	void setY1(int y1);
 	void setX2(int x2);

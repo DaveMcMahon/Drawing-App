@@ -15,7 +15,7 @@ public:
 	virtual ~BoundedShape() {
 	}
 
-public:
+private:
 	void setFilled(bool isFilled);
 
 public:
