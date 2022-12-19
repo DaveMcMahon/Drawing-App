@@ -4,6 +4,7 @@
 #include "Shape.h"
 #include <iostream>
 #include <sstream>
+#include <SDL.h>
 
 class Line: public Shape {
 public:
@@ -13,6 +14,7 @@ public:
 
 public:
 	void draw() override;
+
 };
 
 #endif

@@ -30,7 +30,7 @@ public:
 	int getX2();
 	int getY2();
 
-// Methods
+// Pure Virtual Function that must be overridden in child classes (abstract)
 public:
 	virtual void draw() = 0;
 };
